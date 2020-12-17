@@ -75,22 +75,3 @@ function Door(calendar, day) {
 	return doors;
 })();
 
-var countDownDate = new Date("Dec 24 2020 20:00:00").getTime();
-
-function timer()
-{
-var timeNow = new Date();
-var distance = countDownDate - timeNow;
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-document.getElementById("szamlalo").innerHTML = days + " nap " + hours + " óra " + minutes + " perc " + seconds + " mp Karácsonyig";
-if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("szamlalo").innerHTML = "KARÁCSONY";
-  }
-}
-
-var x = setInterval(timer, 1000);
-

@@ -73,19 +73,6 @@ table#adventDoors {
 #adventDoors button a.disabled:hover {
 	background-color: green;
 }
-#szamlalo
-{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: crimson;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 40px;
-  padding: 15px;
-  border: 1px solid white;
-  border-radius: 10px;
-}
 #surprise
 {
   position: absolute;
