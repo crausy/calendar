@@ -36,7 +36,7 @@ function Door(calendar, day) {
 	this.y = - ( 0.96 * calendar.height - Math.floor((day - 1) / 4) * (1.1 * this.height) );
 	this.content = function() { 
 		
-		var node = document.createElement("li");
+		var node = document.getElementById("gomb");
 		document.getElementById("adventDoors").appendChild(node);
 		node.id = "door" + day;
 		node.style.cssText = "width: " + this.width + "px; height: " + this.height + "px; top: " + this.y + "px; left: " + this.x + "px;";
